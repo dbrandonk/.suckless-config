@@ -62,12 +62,14 @@ static const char *termcmd[]  = { "st", NULL };
 static const char *firefox[]  = { "firefox", NULL };
 static const char *tmux[]  = { "st", "-e", "tmux", NULL };
 static const char *sgpt[]  = { "st", "-e", "sgpt --repl temp", NULL };
+static const char *lock[]  = { "slock", NULL };
 
 static const Key keys[] = {
 
 	{ MODKEY,                       XK_t,      spawn,          {.v = tmux } },
 	{ MODKEY,                       XK_w,      spawn,          {.v = firefox } },
 	{ MODKEY,                       XK_s,      spawn,          {.v = sgpt } },
+	{ MODKEY|ShiftMask,             XK_l,      spawn,          {.v = lock } },
 
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
