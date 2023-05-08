@@ -61,7 +61,7 @@ static const char *termcmd[]  = { "st", NULL };
 
 static const char *firefox[]  = { "firefox", NULL };
 /* static const char *tmux[]  = { "st", "-e", "tmux", NULL }; */
-static const char *sgpt[]  = { "st", "-e", "sgpt", "--repl", "temp", NULL };
+static const char *sgpt[]  = { "st", "-e", "tmux", "new", "sgpt", "--repl", "temp", NULL };
 static const char *ranger[]  = { "st", "-e", "ranger", NULL };
 static const char *lock[]  = { "slock", NULL };
 
